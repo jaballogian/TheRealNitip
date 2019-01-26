@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TheRealNitip</string>
+    <string name="title_home">Home</string>
+    <string name="title_myOrder">My Order</string>
+    <string name="title_trolley">Trolley</string>
+    <string name="title_whislist">Whislist</string>
+    <string name="title_message">Message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

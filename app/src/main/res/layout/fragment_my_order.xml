@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.nitip.therealnitip.MyOrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/toolbarInMyOrderFragment"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="Back"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textColorPrimary"
+                        android:drawableLeft="@drawable/logo_arrow_left"
+                        android:textSize="18sp"/>
+                </android.support.v7.widget.Toolbar>
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabsInMyOrderFragment"
+                    app:tabTextColor="@color/textColorPrimary"
+                    style="@style/MyCustomTabLayoutInMyOrder"
+                    app:tabMode="fixed"
+                    app:tabGravity="fill">
+
+                </android.support.design.widget.TabLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewPagerInMyOrderFragment"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v4.view.ViewPager>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</FrameLayout>

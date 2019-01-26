@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nitip.therealnitip.LogInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/logo_background_log_in">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linearLayoutAtas">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo_apps_nitip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutBawah"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayoutAtas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="daftarkan dengan akun facebook anda"
+                android:background="#33518f"
+                android:textColor="#ffffff"
+                android:paddingRight="10dp"
+                android:paddingLeft="13dp"
+                android:textSize="11sp"
+                android:drawableLeft="@drawable/logo_facebook_sign_in"
+                android:gravity="left|center"
+                android:drawablePadding="14dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="daftarkan dengan alamat gmail anda"
+                android:background="#ffffff"
+                android:textColor="@color/textColorPrimary"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/logo_google_sign_in"
+                android:drawablePadding="8dp"
+                android:gravity="left|center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="daftarkan dengan nomor handphone anda"
+                android:background="#ffffff"
+                android:textColor="@color/textColorPrimary"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/logo_smartphone_sign_in"
+                android:drawablePadding="10dp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

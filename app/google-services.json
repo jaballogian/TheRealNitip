@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "268614018897",
+    "firebase_url": "https://therealnitip.firebaseio.com",
+    "project_id": "therealnitip",
+    "storage_bucket": "therealnitip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268614018897:android:ead2dd77cc8f4fa4",
+        "android_client_info": {
+          "package_name": "com.nitip.therealnitip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268614018897-6re7olndke5e4cmrghdmvorrkhm8nd84.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nitip.therealnitip",
+            "certificate_hash": "f22decb99cdf8b99ede489e92bf756a7bd613b4f"
+          }
+        },
+        {
+          "client_id": "268614018897-jh950c0n3u1r3s1ad6r80n8fmfs8jl31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCONItAdVQ6UXDMZe9_lhBCIQuztMfh9ng"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268614018897-jh950c0n3u1r3s1ad6r80n8fmfs8jl31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

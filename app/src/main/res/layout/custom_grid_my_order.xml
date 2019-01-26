@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/my_shape_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/my_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jenis nitip"
+                android:textSize="16sp"
+                android:textColor="@color/textColorPrimary"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:id="@+id/jenisNitipMyOrders"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dd mmm yyyy"
+                android:textSize="16sp"
+                android:textColor="@color/textColorPrimary"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:id="@+id/tanggalBarangMyOrders"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="14sp"
+            android:text="nama barang"
+            android:layout_margin="10dp"
+            android:id="@+id/namaBarangMyOrders"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asal kota"
+            android:textSize="14sp"
+            android:textColor="@color/textColorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/asalKotaMyOrders"/>
+    </LinearLayout>
+
+</RelativeLayout>

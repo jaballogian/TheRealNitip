@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nitip.therealnitip.CheckOutNitipBawaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#ffffff"
+                            android:drawableLeft="@drawable/logo_arrow_left"
+                            android:drawablePadding="5dp"
+                            android:text="Back"
+                            android:textAllCaps="false"
+                            android:textColor="#929190"
+                            android:textSize="20sp"/>
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="#ffffff"
+                            android:drawableLeft="@drawable/logo_share"
+                            android:text="Share"
+                            android:textAllCaps="false"
+                            android:textColor="#929190"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="160dp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@drawable/my_shape">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Barang"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/logo_nitip_bawa" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Nitip Bawa"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:srcCompat="@drawable/logo_plane" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Berangkat ke Tujuan"
+                                    android:textColor="@color/textColorPrimary"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="dd-mm-yyyy"
+                                    android:textColor="@color/textColorPrimary"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@drawable/my_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Barang"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorPrimary"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColorPrimary"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:gravity="right"/>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:background="@drawable/my_shape_orange"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:text="+"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/my_shape_orange" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catatan untuk Penjual"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tampilkan catatan untuk penjual di sini"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f0f0f0"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tujuan Pengiriman"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat Lengkap"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kota"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor HP"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pilih Alamat"
+                            android:textAllCaps="false"
+                            android:background="#a19fa0"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tambah Alamat Lain"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:background="#a19fa0"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/my_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kurir Pengiriman"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <!--ganti dengan expandable list view-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Agen Kurir"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/my_shape">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kurir Pengiriman"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"/>
+
+                    <!--ganti dengan expandable list view-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Agen Kurir"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/my_shape_gray"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Harga Produk"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. Harga"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/my_shape_gray"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biaya Kirim"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. Harga"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bayar"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimary"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="15dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
